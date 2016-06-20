@@ -8,7 +8,7 @@ step 'Search for a module by exact keyword'
 on master, puppet("module search github") do
   assert_equal '', stderr
   assert_equal <<-STDOUT, stdout
-\e[mNotice: Searching https://forge.puppetlabs.com ...\e[0m
+\e[mNotice: Searching https://forge.puppet.com ...\e[0m
 NAME               DESCRIPTION                    AUTHOR          KEYWORDS      
 pmtacceptance-git  UNKNOWN                        @pmtacceptance  git \e[0;32mgithub\e[0m    
   STDOUT
@@ -19,7 +19,7 @@ end
 # on master, puppet("module search hub") do
 #   assert_equal '', stderr
 #   assert_equal <<-STDOUT, stdout
-# \e[mNotice: Searching https://forge.puppetlabs.com ...\e[0m
+# \e[mNotice: Searching https://forge.puppet.com ...\e[0m
 # No results found for 'hub'.
 # STDOUT
 # end

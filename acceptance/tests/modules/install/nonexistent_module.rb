@@ -30,7 +30,7 @@ on master, puppet("module --render-as json install #{module_author}-#{module_nam
   oneline_expectation   = %[Could not execute operation for '#{module_author}/#{module_name}'. Detail: Module #{module_author}/#{module_name} not found / 410 Gone.]
   multiline_expectation = <<-OUTPUT.chomp
 Could not execute operation for '#{module_author}/#{module_name}'
-  The server being queried was https://forge.puppetlabs.com
+  The server being queried was https://forge.puppet.com
   The HTTP response we received was '410 Gone'
   The message we received said 'Module #{module_author}/#{module_name} not found'
     Check the author and module names are correct.

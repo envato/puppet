@@ -44,7 +44,7 @@ on master, puppet("module upgrade pmtacceptance-java"), :acceptable_exit_codes =
   assert_output <<-OUTPUT
     STDOUT> \e[mNotice: Preparing to upgrade 'pmtacceptance-java' ...\e[0m
     STDOUT> \e[mNotice: Found 'pmtacceptance-java' (\e[0;36mv1.6.0\e[m) in #{master['distmoduledir']} ...\e[0m
-    STDOUT> \e[mNotice: Downloading from https://forge.puppetlabs.com ...\e[0m
+    STDOUT> \e[mNotice: Downloading from https://forge.puppet.com ...\e[0m
     STDERR> \e[1;31mError: Could not upgrade module 'pmtacceptance-java' (v1.6.0 -> latest: v1.7.1)
     STDERR>   No version of 'pmtacceptance-stdlib' will satisfy dependencies
     STDERR>     'notpmtacceptance-unicorns' (v0.0.3) requires 'pmtacceptance-stdlib' (v0.0.2)
@@ -68,7 +68,7 @@ on master, puppet("module upgrade pmtacceptance-java --version 1.7.0 --ignore-de
   assert_output <<-OUTPUT
     \e[mNotice: Preparing to upgrade 'pmtacceptance-java' ...\e[0m
     \e[mNotice: Found 'pmtacceptance-java' (\e[0;36mv1.6.0\e[m) in #{master['distmoduledir']} ...\e[0m
-    \e[mNotice: Downloading from https://forge.puppetlabs.com ...\e[0m
+    \e[mNotice: Downloading from https://forge.puppet.com ...\e[0m
     \e[mNotice: Upgrading -- do not interrupt ...\e[0m
     #{master['distmoduledir']}
     └── pmtacceptance-java (\e[0;36mv1.6.0 -> v1.7.0\e[0m)
@@ -80,7 +80,7 @@ on master, puppet("module upgrade pmtacceptance-java") do
   assert_output <<-OUTPUT
     \e[mNotice: Preparing to upgrade 'pmtacceptance-java' ...\e[0m
     \e[mNotice: Found 'pmtacceptance-java' (\e[0;36mv1.7.0\e[m) in #{master['distmoduledir']} ...\e[0m
-    \e[mNotice: Downloading from https://forge.puppetlabs.com ...\e[0m
+    \e[mNotice: Downloading from https://forge.puppet.com ...\e[0m
     \e[mNotice: Upgrading -- do not interrupt ...\e[0m
     #{master['distmoduledir']}
     └─┬ pmtacceptance-java (\e[0;36mv1.7.0 -> v1.7.1\e[0m)

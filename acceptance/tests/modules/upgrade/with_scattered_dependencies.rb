@@ -34,7 +34,7 @@ with_puppet_running_on master, master_opts, testdir do
     assert_output <<-OUTPUT
       \e[mNotice: Preparing to upgrade 'pmtacceptance-postgresql' ...\e[0m
       \e[mNotice: Found 'pmtacceptance-postgresql' (\e[0;36mv0.0.1\e[m) in #{master['distmoduledir']} ...\e[0m
-      \e[mNotice: Downloading from https://forge.puppetlabs.com ...\e[0m
+      \e[mNotice: Downloading from https://forge.puppet.com ...\e[0m
       \e[mNotice: Upgrading -- do not interrupt ...\e[0m
       #{master['distmoduledir']}
       └─┬ pmtacceptance-postgresql (\e[0;36mv0.0.1 -> v0.0.2\e[0m)

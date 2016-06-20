@@ -3,7 +3,7 @@ test_name 'Searching for modules by part of the name'
 module_name = "pmtacceptance-geordi"
 
 expected_output  = <<-STDOUT
-\e[mNotice: Searching https://forge.puppetlabs.com ...\e[0m
+\e[mNotice: Searching https://forge.puppet.com ...\e[0m
 NAME                  DESCRIPTION                  AUTHOR          KEYWORDS     
 %s  UNKNOWN                      @pmtacceptance  star trek    
 STDOUT

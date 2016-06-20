@@ -49,7 +49,7 @@ with_puppet_running_on master, master_opts, testdir do
     assert_output <<-OUTPUT
       \e[mNotice: Preparing to upgrade 'pmtacceptance-java' ...\e[0m
       \e[mNotice: Found 'pmtacceptance-java' (\e[0;36mv1.6.0\e[m) in #{master['distmoduledir']} ...\e[0m
-      \e[mNotice: Downloading from https://forge.puppetlabs.com ...\e[0m
+      \e[mNotice: Downloading from https://forge.puppet.com ...\e[0m
       \e[mNotice: Upgrading -- do not interrupt ...\e[0m
       #{master['distmoduledir']}
       └── pmtacceptance-java (\e[0;36mv1.6.0 -> v1.7.1\e[0m)

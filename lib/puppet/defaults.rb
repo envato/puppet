@@ -425,7 +425,7 @@ module Puppet
   )
   Puppet.define_settings(:module_tool,
     :module_repository  => {
-      :default  => 'https://forge.puppetlabs.com',
+      :default  => 'https://forge.puppet.com',
       :desc     => "The module repository",
     },
     :module_working_dir => {
